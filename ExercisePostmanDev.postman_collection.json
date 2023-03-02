@@ -1,0 +1,172 @@
+{
+	"info": {
+		"_postman_id": "7766e470-32f4-41ca-a2ed-0cf45dc6bee3",
+		"name": "ExercisePostmanDev",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23018916"
+	},
+	"item": [
+		{
+			"name": "GetMargaritaWithName",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita",
+					"host": [
+						"www",
+						"thecocktaildb",
+						"com"
+					],
+					"path": [
+						"api",
+						"json",
+						"v1",
+						"1",
+						"search.php"
+					],
+					"query": [
+						{
+							"key": "s",
+							"value": "margarita"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RumIngredients",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "www.thecocktaildb.com/api/json/v1/1/search.php?i=rum",
+					"host": [
+						"www",
+						"thecocktaildb",
+						"com"
+					],
+					"path": [
+						"api",
+						"json",
+						"v1",
+						"1",
+						"search.php"
+					],
+					"query": [
+						{
+							"key": "i",
+							"value": "rum"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EmployeeByID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://dummy.restapiexample.com/api/v1/employee/14",
+					"protocol": "https",
+					"host": [
+						"dummy",
+						"restapiexample",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"employee",
+						"14"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateEmployee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"employee_name\": \"Jhon\",\r\n        \"employee_salary\": 40000,\r\n        \"employee_age\": 35,\r\n        \"profile_image\": \"\"\r\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://dummy.restapiexample.com/api/v1/create",
+					"protocol": "https",
+					"host": [
+						"dummy",
+						"restapiexample",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PredictAge",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.agify.io?name[]=lucy&name[]=bob&name[]=alice",
+					"protocol": "https",
+					"host": [
+						"api",
+						"agify",
+						"io"
+					],
+					"query": [
+						{
+							"key": "name[]",
+							"value": "lucy"
+						},
+						{
+							"key": "name[]",
+							"value": "bob"
+						},
+						{
+							"key": "name[]",
+							"value": "alice"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
